@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info">
+
+    <ScrollView
+        android:layout_width="337dp"
+        android:layout_height="728dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Индекс массы тела — ИМТ (англ. body mass index (BMI)) — величина, позволяющая оценить степень соответствия массы человека и его роста и тем самым, косвенно, оценить, является ли масса недостаточной, нормальной, избыточной (ожирение). Норма: 18,5-25"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="235dp"
+                    app:srcCompat="@drawable/imtinf" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Промилле – это единица определения количества алкоголя в крови человека. 1 промилле – 1/10 часть процента, то есть промилле – эта точная малая единица измерения для оценки примесей в жидкостях, поскольку даже 1% спирта в крови – уже является очень высоким показателем."
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    app:srcCompat="@drawable/kainf" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Калькулятор содержания вещества в растворе позволяет из данного раствора получить требуемый раствор."
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="279dp"
+                    app:srcCompat="@drawable/rasinf" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ИК - индекс курильщика: количество выкуриваемых сигарет в день надо умножить на стаж курения (годы) и разделить полученное произведение на 20. Это и будет ИК. Если ИК больше 10, то это является достоверным фактором риска развития ХОБЛ - хронической обструктивной болезни легких."
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="424dp"
+                    app:srcCompat="@drawable/siginf" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="В физиологии и медицине, площадь поверхности тела (ППТ, англ. BSA) — это измеренная или рассчитанная поверхность человеческого тела. Для многих клинических целей ППТ является лучшим показателем метаболического обмена, чем масса тела, поскольку она менее зависит от излишнего количества жировой ткани."
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="226dp"
+                    app:srcCompat="@drawable/stelainf" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Питьевой режим жизненно важен для здоровья и нормального функционирования человеческого организма. Есть установленная норма воды для мужчин и женщин, которую необходимо употреблять в сутки. Но цифры различаются в зависимости от веса человека и его физической активности. "
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="308dp"
+                    app:srcCompat="@drawable/vodainf" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Средним артериальным давлением называется давление всего сердечного цикла. Норма колеблется в пределах 70-110 мм.рт.ст."
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="294dp"
+                    app:srcCompat="@drawable/davinf" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Для подсчётов используется формула Миффлина — Сан-Жеора. Американская ассоциация диетологов считает её наиболее надёжной для вычисления нормы калорий. Ещё один её плюс в том, что вам потребуется измерить только рост и вес, а это возможно и без узкоспециализированного оборудования."
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kalinf" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

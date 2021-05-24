@@ -1,0 +1,188 @@
+@startuml
+class com.example.medicine_calculator.dav {
+~ Button bt
+~ TextView txt
+~ double s
+~ double d
+~ double x
+~ EditText sText
+~ EditText dText
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.dav.DavThread {
++ void run()
+}
+class com.example.medicine_calculator.stela {
+~ double ves2
+~ double rost2
+~ double s
+~ EditText ves2Text
+~ EditText rost2Text
+~ Button bt
+~ TextView txt
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.stela.StelaThread {
++ void run()
+}
+class com.example.medicine_calculator.kal {
+~ Button bt
+~ TextView txt
+~ double w
+~ double h
+~ double ye
+~ double x
+~ EditText wText
+~ EditText hText
+~ EditText yeText
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.kal.KalThread {
++ void run()
+}
+class com.example.medicine_calculator.kurenie {
+~ double n
+~ double y
+~ double k
+~ EditText nText
+~ EditText yText
+~ EditText kText
+~ Button bt
+~ TextView txt
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.kurenie.KurenieThread {
++ void run()
+}
+class com.example.medicine_calculator.avt {
+- Button bt_new
+- Button bt_old
+- EditText txt_login
+- EditText txt_password
+- {static} String MAIN_LOL
+- {static} String DATABASE_NAME
+- {static} int DATABASE_VERSION
+- {static} String TABLE_NAME
+- {static} String COLUMN_ID
+- {static} String COLUMN_LOGIN
+- {static} String COLUMN_PASSWORD
+- {static} int NUM_COLUMN_ID
+- {static} int NUM_COLUMN_LOGIN
+- {static} int NUM_COLUMN_PASSWORD
+- SQLiteDatabase sqLiteDatabase
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.avt.openHelper {
++ void onCreate(SQLiteDatabase)
++ void onUpgrade(SQLiteDatabase,int,int)
+}
+class com.example.medicine_calculator.IMT {
+- {static} String LOG_TAG
+~ Button bt
+~ TextView txt
+~ String s
+~ double rost
+~ double ves
+~ double vozrast
+~ EditText rostText
+~ EditText vesText
+~ EditText vozrastText
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.IMT.IMTThread {
++ void run()
+}
+class com.example.medicine_calculator.info {
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.voda {
+~ double ves3
+~ double t
+~ double i
+~ EditText ves3Text
+~ EditText tText
+~ Button bt
+~ TextView txt
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.voda.VodaThread {
++ void run()
+}
+class com.example.medicine_calculator.KA {
+~ Switch switchPol
+~ boolean flag
+~ Button bt
+~ TextView txt
+~ double r
+~ double mn
+~ double krep
+~ double m
+~ EditText mnText
+~ EditText krepText
+~ EditText mText
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.KA.KAThread {
++ void run()
+}
+class com.example.medicine_calculator.MainActivity {
+- ImageButton bt_IMT
+- ImageButton bt_KA
+- ImageButton bt_Rastvor
+- ImageButton bt_Kurenie
+- ImageButton bt_Stela
+- ImageButton bt_Voda
+- ImageButton bt_kal
+- ImageButton bt_dav
+- Button bt_info
+- String kek
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.rasstvor {
+~ double kol1
+~ double kol2
+~ double per1
+~ double per2
+~ EditText kol1Text
+~ EditText kol2Text
+~ EditText per1Text
+~ EditText per2Text
+~ Button bt
+~ TextView txt
+# void onCreate(Bundle)
+}
+class com.example.medicine_calculator.rasstvor.RastvorThread {
++ void run()
+}
+
+
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.dav
+com.example.medicine_calculator.dav +.. com.example.medicine_calculator.dav.DavThread
+com.example.medicine_calculator.Thread <|-- com.example.medicine_calculator.dav.DavThread
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.stela
+com.example.medicine_calculator.stela +.. com.example.medicine_calculator.stela.StelaThread
+com.example.medicine_calculator.Thread <|-- com.example.medicine_calculator.stela.StelaThread
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.kal
+com.example.medicine_calculator.kal +.. com.example.medicine_calculator.kal.KalThread
+com.example.medicine_calculator.Thread <|-- com.example.medicine_calculator.kal.KalThread
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.kurenie
+com.example.medicine_calculator.kurenie +.. com.example.medicine_calculator.kurenie.KurenieThread
+com.example.medicine_calculator.Thread <|-- com.example.medicine_calculator.kurenie.KurenieThread
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.avt
+com.example.medicine_calculator.avt +.. com.example.medicine_calculator.avt.openHelper
+com.example.medicine_calculator.SQLiteOpenHelper <|-- com.example.medicine_calculator.avt.openHelper
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.IMT
+com.example.medicine_calculator.IMT +.. com.example.medicine_calculator.IMT.IMTThread
+com.example.medicine_calculator.Thread <|-- com.example.medicine_calculator.IMT.IMTThread
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.info
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.voda
+com.example.medicine_calculator.voda +.. com.example.medicine_calculator.voda.VodaThread
+com.example.medicine_calculator.Thread <|-- com.example.medicine_calculator.voda.VodaThread
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.KA
+com.example.medicine_calculator.KA +.. com.example.medicine_calculator.KA.KAThread
+com.example.medicine_calculator.Thread <|-- com.example.medicine_calculator.KA.KAThread
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.MainActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.example.medicine_calculator.rasstvor
+com.example.medicine_calculator.rasstvor +.. com.example.medicine_calculator.rasstvor.RastvorThread
+com.example.medicine_calculator.Thread <|-- com.example.medicine_calculator.rasstvor.RastvorThread
+@enduml

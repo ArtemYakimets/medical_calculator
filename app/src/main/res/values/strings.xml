@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Медицинский калькулятор</string>
+
+    <style name="GreenText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+</resources>

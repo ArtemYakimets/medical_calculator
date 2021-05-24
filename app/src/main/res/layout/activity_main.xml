@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginEnd="10sp"
+        tools:ignore="ScrollViewSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="538dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="Индекс массы тела" />
+
+                    <ImageButton
+                        android:id="@+id/IMT"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/imt" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="Расчёт содержания вещества в растворе" />
+
+                    <ImageButton
+                        android:id="@+id/Rastvor"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/rastvor" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="Площадь поверхности тела" />
+
+                    <ImageButton
+                        android:id="@+id/Stela"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/stela" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="Среднее артериальное давление" />
+
+                    <ImageButton
+                        android:id="@+id/dav"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/dav" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="Расчёт концентрации алкоголя в крови" />
+
+                    <ImageButton
+                        android:id="@+id/KA"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ka" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="Индекс курильщика" />
+
+                    <ImageButton
+                        android:id="@+id/Kurenie"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/kurenie" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="Ежедневная питьевая норма воды" />
+
+                    <ImageButton
+                        android:id="@+id/Voda"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/voda" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="Ежедневная норма калорий " />
+
+                    <ImageButton
+                        android:id="@+id/kal"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/kal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Информация" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                app:srcCompat="@drawable/samsung" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
